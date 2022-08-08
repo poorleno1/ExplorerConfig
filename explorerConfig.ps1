@@ -38,7 +38,7 @@ function Modify-Explorer ($param1, $param2) {
 
     if ($restartExplorer) {
         Get-Process explorer | Stop-Process
-		Start-Process explorer
+		Start-Process explorer c:
     }
 }
 
