@@ -113,7 +113,7 @@ Function Set-PinTaskbar {
                 
 
 
-$app = @{pin = @("C:\tools\procexp64.exe","C:\tools\Procmon64.exe","C:\windows\system32\cmd.exe", "C:\windows\system32\services.msc", "C:\windows\system32\eventvwr.msc", "C:\Windows\system32\taskmgr.exe"); unpin = @("Internet Explorer") }
+$app = @{pin = @("C:\tools\tcpview64.exe","C:\tools\procexp64.exe","C:\tools\Procmon64.exe","C:\windows\system32\cmd.exe", "C:\windows\system32\services.msc", "C:\windows\system32\eventvwr.msc", "C:\Windows\system32\taskmgr.exe"); unpin = @("Internet Explorer") }
 
 $app.pin | ForEach-Object {
     Set-PinTaskbar $_
